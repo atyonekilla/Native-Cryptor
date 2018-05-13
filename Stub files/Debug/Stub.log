@@ -1,0 +1,6 @@
+﻿cl : командная строка warning D9025: переопределение "/MDd" на "/MT"
+  Main.cpp
+c:\users\alexu\source\repos\project6\stub\main.cpp(92): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\alexu\source\repos\project6\stub\main.cpp(114): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\alexu\source\repos\project6\stub\main.cpp(140): warning C4715: WinMain: значение возвращается не при всех путях выполнения
+  Stub.vcxproj -> c:\Users\alexu\source\repos\Project6\Debug\Stub.exe

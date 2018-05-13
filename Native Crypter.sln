@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A2F33AA-46F5-4E75-90C3-04527C75DE1B}"
+	ProjectSection(SolutionItems) = preProject
+		Key.h = Key.h
+		xor.h = xor.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Builder", "Native Cryptor\Project6.vcxproj", "{70982B20-E43C-4414-BBB9-12707BD47305}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stub", "Stub files\Stub.vcxproj", "{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Debug|x64.ActiveCfg = Debug|x64
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Debug|x64.Build.0 = Debug|x64
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Debug|x86.ActiveCfg = Debug|Win32
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Debug|x86.Build.0 = Debug|Win32
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Release|x64.ActiveCfg = Release|x64
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Release|x64.Build.0 = Release|x64
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Release|x86.ActiveCfg = Release|Win32
+		{70982B20-E43C-4414-BBB9-12707BD47305}.Release|x86.Build.0 = Release|Win32
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Debug|x64.ActiveCfg = Debug|x64
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Debug|x64.Build.0 = Debug|x64
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Debug|x86.ActiveCfg = Debug|Win32
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Debug|x86.Build.0 = Debug|Win32
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Release|x64.ActiveCfg = Release|x64
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Release|x64.Build.0 = Release|x64
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Release|x86.ActiveCfg = Release|Win32
+		{B2B5DBC6-2943-4170-AEBF-4809ED160AB6}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E578505-395D-456A-A887-8A2EE7DF688A}
+	EndGlobalSection
+EndGlobal
