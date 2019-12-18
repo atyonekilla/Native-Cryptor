@@ -26,6 +26,12 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	string input_file, output_file;
 
+	cout << "Привет: \n"; 
+	cout << "Hello: \n"; Sleep(2000); system("cls"); Sleep(1000);
+	cout << "Эта программа была создана @atyonekilla для публичного использования: \n";	
+	cout << "This program was create public using, please don`t delete author @atyonekilla: \n";	
+	Sleep(4000); system("cls");	Sleep(1000);
+	//Main Functions
 	cout << "Введите имя входного файла: ";
 	cin >> input_file;
 	cout << endl << "Введите имя выходного файла: ";
