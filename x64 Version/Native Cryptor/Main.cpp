@@ -28,14 +28,14 @@ int main()
 	cout << "This program was create public using, please don`t delete author @atyonekilla: \n";	
 	Sleep(1000); system("cls");
 	//Main Functions
-	cout << "Ââåäèòå èìÿ âõîäíîãî ôàéëà: ";
+	cout << "input file(just drag the .exe to the CLI): ";
 	cin >> input_file;
-	cout << endl << "Ââåäèòå èìÿ âûõîäíîãî ôàéëà: ";
+	cout << endl << "out file name: ";
 	cin >> output_file;
 
 	CopyFile("Stub.exe", output_file.c_str(), FALSE);
 	// Äî ýòîé ñòðî÷êè ìû ïîëó÷èëè âñå íåîáõîäèìûå äàííûå äëÿ ñîçäàåíèÿ ñòàáà (îñòàëüíîå ïîòîì)
-	
+	//i still have no idea what this means
 	vector<unsigned char> file_bytes, settings;
 
 	HANDLE hFile = CreateFile(input_file.c_str(), GENERIC_ALL, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
