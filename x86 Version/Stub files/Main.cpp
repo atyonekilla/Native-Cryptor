@@ -1,8 +1,10 @@
 #include <Windows.h>
 #include <vector>
 #include <string>
+#include <random>
 #include "../../Key.h"
 #include "Runpe.h"
+
 
 int GetRandom(int min, int max)
 {
